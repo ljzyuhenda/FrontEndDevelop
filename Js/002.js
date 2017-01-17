@@ -84,8 +84,11 @@ function addClick(){
     newStuArr.forEach(addScore);
 
     var newStuArr2 = newStuArr.map(addScore2);
+    var newStuArr2 = newStuArr.map(addScore2);
 
     students.reduce(sum, 0);
+
+    var jerry = parseQuery("name=jerry&age=1&age1");
 
     document.write(add(1, 3, 5));
     regDemo1();
@@ -96,6 +99,19 @@ var sum = function(previousResult, item, index, array){
 
 var addScore2 = function(item, index, array){
     return item + 5;
+}
+var parseQuery = function(param){
+    // var reg = /([^=&\s]+)[=\s]*([^=&\s]*)/g;
+    var reg = /([^=&]+)[=]*([^=&]*)/g;
+    // var reg = /([a-z0-9]+)[=]([a-z0-9]+)/g;
+    var obj = {};
+    var resArr;
+
+    while((resArr = reg.exec(param))){
+        obj[resArr[1]] =resArr[2];
+    }
+
+    return obj;
 }
 
 var add = function(){

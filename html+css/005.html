@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            line-height: 30px
+        }
+    </style>
+</head>
+
+<body>
+    <table class="t1" border="1">
+        <caption>table 标题</caption>
+        <thead>
+            <tr>
+                <th>列1</th>
+                <th>列2</th>
+                <th>列3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>行1</th>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <th>行2</th>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">行尾</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <form action="/login" method="post">
+            <fieldset>
+                <legend>form1</legend>
+                <label for="file">选择照片</label>
+                <div>
+                    内容1
+                </div>
+
+                <input type="text" name="text1" value="text1" placeholder="输入">
+            </fieldset>
+
+            <fieldset>
+                <legend>form2</legend>
+                <div>
+                    内容2
+                </div>
+
+                <div>
+                    <input type="file" name="file1" value="file1">
+                </div>
+
+                <div>
+                    <input type="radio" name="radio1" value="radio1">
+                    <label for="rd0">富士</label>
+
+                    <input type="radio" name="radio2" value="radio1">
+                    <label for="rd1">平谷</label>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit1" value="提交">
+                    <input type="reset" name="reset1" value="重置">
+                </div>
+
+                <div>
+                    <button type="submit">提交</button>
+                    <button type="reset">重置</button>
+                </div>
+
+                <select>
+                    <option value="0">ems</option>
+                    <optgroup>
+                        <option value="1" selected>邮政</option>
+                        <option value="2" selected>飞机</option>
+                    </optgroup>
+                </select>
+
+                <div>
+                    <textarea rows="3"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="size" value="5" id="cb0">
+                    <label for="cb0">A</label>
+
+                    <input type="checkbox" name="size" value="6" id="cb1">
+                    <label for="cb1">B</label>
+                </div>
+
+                <div>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <input type="range">
+                    <input type="url">
+                    <input type="color">
+                    <input type="search">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

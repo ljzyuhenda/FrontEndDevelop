@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+        
+        .p2 {
+            color: blue;
+        }
+        
+        .strength {
+            font-weight: bold;
+        }
+        
+        [name] {
+            color: red;
+        }
+        
+        [type=button] {
+            color: blue;
+        }
+        
+        div {
+            line-height: 30px;
+        }
+        
+        [lang|=en] {
+            color: red;
+        }
+        
+        [href^="#"] {
+            color: blue
+        }
+        
+        [href$=ml] {
+            color: red;
+        }
+        
+        [href*="http"] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>段落一</p>
+        <p class="p2 strength">段落二</p>
+        <p class="p2">内容</p>
+        <p lang="en">hello</p>
+        <p lang="en-us">hello-us</p>
+
+        <a href="http://www.baidu.com">百度</a>
+        <a href="#html">html</a>
+        <a href="#css">css</a>
+    </div>
+
+    <form>
+        <input type="text" name="t1" value="t1">
+        <div>
+            <input type="button" name="b1" value="b1">
+        </div>
+    </form>
+</body>
+
+</html>
