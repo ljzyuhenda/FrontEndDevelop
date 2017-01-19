@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+        }
+        
+        .p1 {
+            white-space: nowrap;
+        }
+        
+        .p2 {
+            white-space: pre;
+        }
+        
+        .p4 {
+            word-wrap: break-word;
+        }
+        
+        .p5 {
+            word-break: break-all;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .p6 {
+            text-shadow: 1px 2px 3px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="p1"> 左边1个空格 左边两个空格 左边三个空格</p>
+        <p class="p2"> 左边1个空格 左边两个空格 左边三个空格</p>
+        <p class="p3"> 左边1个空格 左边两个空格 左边三个空格</p>
+
+        <p class="p4"> Hello world Hello world Hello world Hello world XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p class="p5"> Hello world Hello world Hello world Hello world XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p class="p6">汉字</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .m-demo {
+            font-size: 50px;
+            text-indent: -2em;
+        }
+        
+        img {
+            width: 10px;
+            height: 10px;
+        }
+        
+        .p1 {
+            line-height: 2;
+        }
+        
+        .va-pic {
+            vertical-align: top;
+        }
+        
+        .va {
+            vertical-align: text-top;
+        }
+        
+        .va-c,
+        .va-1,
+        .va-2,
+        .va-3 {
+            font-size: 20px;
+        }
+        
+        .va-1 {
+            vertical-align: sub;
+        }
+        
+        .va-2 {
+            vertical-align: super;
+        }
+        
+        .va-3 {
+            vertical-align: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-demo">
+        <p class="p1">
+            文字
+            <img src="../img/icon.png" alt="图片" class="va">
+            <span>文字</span>
+            <img src="../img/icon.png" alt="图片" class="va-pic"> 文字
+        </p>
+
+        <p>
+            普通文字
+            <span class="va-c">普通</span> 普通文字
+            <span class="va-1">对齐20px</span> 普通文字
+        </p>
+
+        <p>
+            普通文字
+            <span class="va-c">普通</span> 普通文字
+            <span class="va-2">对齐20px</span> 普通文字
+        </p>
+
+        <p>
+            普通文字
+            <span class="va-c">普通</span> 普通文字
+            <span class="va-3">对齐20px</span> 普通文字
+        </p>
+    </div>
+</body>
+
+</html>

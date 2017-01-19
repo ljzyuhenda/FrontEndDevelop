@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*::first-letter {
+            color: red;
+        }
+        
+         ::first-line {
+            color: green;
+        }*/
+        /*::before {
+            content: "before";
+        }
+        
+         ::after {
+            content: "after";
+        }*/
+        
+         ::selection {
+            color: red;
+            background-color: #ccc;
+        }
+        
+        .main>h2 {
+            color: red
+        }
+        
+        h2+p {
+            color: blue;
+        }
+        
+        h3~p {
+            color: orange
+        }
+        
+        .main,
+        .main2 {
+            color: pink
+        }
+    </style>
+</head>
+
+<body>
+    <p> css伪元素选择器</p>
+    <p>第二段</p>
+
+    <div class="main">
+        <h2>标题1</h2>
+        <p>段落1</p>
+        <div>
+            <h2>标题2</h2>
+            <p>段落2</p>
+        </div>
+
+        <div>
+            <p>段落3-0</p>
+            <h3>标题3</h3>
+            <p>段落3</p>
+            <p>段落3-1</p>
+        </div>
+    </div>
+
+    <div class="main2">
+        标题1
+    </div>
+</body>
+
+</html>
