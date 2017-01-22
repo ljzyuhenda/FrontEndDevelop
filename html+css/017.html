@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .p1 {
+            white-space: pre-line;
+            /*background-color: red;*/
+            margin-left: 2em;
+        }
+
+        .p0{
+            /*background-color: blue;*/
+           font-weight: bolder;
+        }
+
+        .b1{
+            display: block;
+        }
+
+        .b2{
+            display: inline;
+            /*width: 300px;
+            height: 300px;
+            */
+        }
+
+        .b3{
+            display: inline-block;
+            /*整体换行*/
+        }
+
+        .p2{
+            width: 100%;
+            height: 0px;
+            border-bottom-color: gray;
+            border-style: dashed;
+            border-width: 1px;
+        }
+        
+        div ul{
+            line-height: 30px;
+            height: 30px;
+            background-color: red;
+            text-align: center;
+        }
+
+        div ul li{
+            width: 80px;
+            display: inline-block;
+            height: 30px;
+            list-style: none;
+            cursor: pointer;
+            background-color: orange;
+        }
+
+        /*.b.c{
+            color: #fff;
+        }*/
+
+        /*.c{
+            color: #fff;
+        }*/
+
+        .parent:last-child{
+            color: #fff;
+        }
+
+        .d1{
+            background-color: orange;
+            width: 50%;
+            position: relative;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .e1{
+            background: cyan;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .e2{
+            background-color: darkblue;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .a{
+            height: 1000px;
+        }
+
+        .d2{
+            position: relative;
+            width: 100%;
+            background-color: orchid;
+            margin-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .e21{
+            background-color: springgreen;
+        }
+
+        .e22{
+            background-color: blanchedalmond;
+            float: right;
+            /*display: none;*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <p class="p0">布局</p>
+        <p class="p1">
+            display(水平居中、剧中导航) 
+            position(轮播头图、固定顶栏、遮罩、三行自适应布局) 
+            float(两列布局)
+            flex(三行两列自适应布局)
+        </p>
+
+        <div>
+            <span class="b1">before block</span>
+            <span class="b2">block block block block block block block block block block block block</span>
+            <span class="b3">after block</span>
+        </div>
+
+        <p class="p2"></p>
+
+
+        <div>
+            <ul>
+                <li>推荐</li>
+                <li>搭配</li>
+                <li>新歌</li>
+            </ul>
+        </div>
+        
+        <div class="parent">
+            <div class="f">
+                This is a demo
+            </div>
+        </div>
+
+        <div class="d1">
+            <div class="e1">
+                轮播头图轮播头图轮播头图
+            </div>
+
+            <div class="e2">
+                点点点点点点点点点
+            </div>
+        </div>
+
+        <div class="d2">
+            <div class="e21">
+                001
+            </div>
+
+            <div class="e22">
+                002
+            </div>
+
+            <div class="e23">
+                003
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
