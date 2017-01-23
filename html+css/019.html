@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .container {
+            flex-direction: row-reverse;
+            display: flex;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+            margin: 10px 0;
+        }
+        
+        .item1 {
+            background-color: orange;
+            margin: 10px;
+            padding: 0 12px;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        .container1 {
+            flex-direction: column-reverse;
+            display: flex;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+            margin: 10px 0;
+        }
+        
+        .container2 {
+            flex-wrap: nowrap;
+            display: flex;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+            width: 350px;
+            margin: 10px 0;
+        }
+        
+        .item2 {
+            background-color: orange;
+            margin: 10px;
+            padding: 0 12px;
+            line-height: 40px;
+            text-align: center;
+            width: 100px;
+            flex-shrink: 0;
+        }
+        
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 350px;
+            margin: 20px 0;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+            justify-content: center;
+            /*align-content: stretch;*/
+        }
+        
+        .item3 {
+            background-color: orange;
+            margin: 10px;
+            padding: 0 12px;
+            line-height: 40px;
+            text-align: center;
+            width: 70px;
+            align-self: flex-start;
+        }
+        
+        .item31 {
+            line-height: 100px;
+        }
+        
+        .container4 {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 350px;
+            margin: 20px 0;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+        }
+        
+        .item4 {
+            background-color: orange;
+            margin: 10px;
+            padding: 0 12px;
+            line-height: 40px;
+            text-align: center;
+            /*width: 100px;*/
+            flex-basis: 0px;
+            flex-grow: 1;
+            /*flex-shrink: 0;*/
+        }
+        
+        .container5 {
+            display: flex;
+            /*flex-wrap: nowrap;*/
+            flex-flow: column nowrap;
+            width: 350px;
+            margin: 20px 0;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: slateblue;
+        }
+        
+        .item5 {
+            background-color: orange;
+            margin: 10px;
+            padding: 0 12px;
+            line-height: 40px;
+            text-align: center;
+            /*width: 100px;*/
+            flex-basis: 0px;
+            /*flex-grow: 1;*/
+            /*flex-shrink: 0;*/
+            /*order: 1;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            1
+        </div>
+
+        <div class="item1">
+            2
+        </div>
+
+        <div class="item1">
+            3
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="item1">
+            1
+        </div>
+
+        <div class="item1">
+            2
+        </div>
+
+        <div class="item1">
+            3
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="item2">
+            1
+        </div>
+
+        <div class="item2">
+            2
+        </div>
+
+        <div class="item2">
+            3
+        </div>
+
+        <div class="item2">
+            4
+        </div>
+
+        <div class="item2">
+            5
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="item3 item31">
+            1
+        </div>
+
+        <div class="item3">
+            2
+        </div>
+
+        <div class="item3">
+            3
+        </div>
+
+        <div class="item2">
+            4
+        </div>
+
+        <div class="item2">
+            5
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="item4">
+            1
+        </div>
+
+        <div class="item4">
+            2
+        </div>
+
+        <div class="item4">
+            3
+        </div>
+
+        <div class="item4">
+            4
+        </div>
+
+        <div class="item4">
+            5
+        </div>
+    </div>
+
+    <div class="container5">
+        <div class="item5">
+            1
+        </div>
+
+        <div class="item5">
+            2
+        </div>
+
+        <div class="item5">
+            3
+        </div>
+
+        <div class="item5">
+            4
+        </div>
+
+        <div class="item5">
+            5
+        </div>
+    </div>
+</body>
+
+</html>
